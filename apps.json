@@ -2,17 +2,17 @@
   "contact": "mirik24348@gmail.com",
   "apps": {
     "receipt-vault": {
-      "name": "Receipt Vault",
+      "name": "Chipmo",
       "accent": "#1F7A5C",
       "accentDark": "#3FAE86",
-      "updated": "2026-10-11",
+      "updated": "2026-10-12",
       "tagline": {
         "en": "Receipts and warranties in one private vault",
         "ru": "Чеки и гарантии в одном приватном хранилище"
       },
       "about": {
-        "en": "Receipt Vault stores your receipts and warranty cards, reads them on your device and reminds you before a warranty or return window ends.",
-        "ru": "Receipt Vault хранит чеки и гарантийные талоны, распознаёт их на устройстве и напоминает до окончания гарантии или срока возврата."
+        "en": "Chipmo stores your receipts and warranty cards, reads them on your device and reminds you before a warranty or return window ends.",
+        "ru": "Chipmo хранит чеки и гарантийные талоны, распознаёт их на устройстве и напоминает до окончания гарантии или срока возврата."
       },
       "data": {
         "storage": "device",
@@ -51,8 +51,8 @@
         {
           "q": { "en": "Reminders do not arrive", "ru": "Не приходят напоминания" },
           "a": {
-            "en": "Open Settings → Notifications → Receipt Vault and allow notifications, then turn on Reminders in the app settings. Reminders are scheduled only for items with a warranty or return period.",
-            "ru": "Откройте Настройки → Уведомления → Receipt Vault и разрешите уведомления, затем включите «Напоминания» в настройках приложения. Напоминания создаются только для покупок с гарантией или сроком возврата."
+            "en": "Open Settings → Notifications → Chipmo and allow notifications, then turn on Reminders in the app settings. Reminders are scheduled only for items with a warranty or return period.",
+            "ru": "Откройте Настройки → Уведомления → Chipmo и разрешите уведомления, затем включите «Напоминания» в настройках приложения. Напоминания создаются только для покупок с гарантией или сроком возврата."
           }
         },
         {
