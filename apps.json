@@ -1,0 +1,68 @@
+{
+  "contact": "mirik24348@gmail.com",
+  "apps": {
+    "receipt-vault": {
+      "name": "Receipt Vault",
+      "accent": "#1F7A5C",
+      "accentDark": "#3FAE86",
+      "updated": "2026-10-11",
+      "tagline": {
+        "en": "Receipts and warranties in one private vault",
+        "ru": "Чеки и гарантии в одном приватном хранилище"
+      },
+      "about": {
+        "en": "Receipt Vault stores your receipts and warranty cards, reads them on your device and reminds you before a warranty or return window ends.",
+        "ru": "Receipt Vault хранит чеки и гарантийные талоны, распознаёт их на устройстве и напоминает до окончания гарантии или срока возврата."
+      },
+      "data": {
+        "storage": "device",
+        "account": false,
+        "analytics": false,
+        "ads": false,
+        "subscriptions": true,
+        "permissions": ["camera", "photos", "files", "notifications", "biometrics"]
+      },
+      "privacyNotes": {
+        "en": [
+          "Text recognition and autofill run entirely on your device, using Apple's Vision framework and, where available, Apple Intelligence. Your documents are never uploaded for processing.",
+          "PDF and CSV files are created on your device and leave it only when you choose to share them."
+        ],
+        "ru": [
+          "Распознавание текста и автозаполнение выполняются полностью на устройстве — средствами Apple Vision и, где доступно, Apple Intelligence. Документы не загружаются на серверы для обработки.",
+          "Файлы PDF и CSV создаются на устройстве и покидают его только тогда, когда вы сами ими делитесь."
+        ]
+      },
+      "termsNotes": {
+        "en": [
+          "Warranty end dates, return windows and reminders are calculated from the data you enter or the app recognises, and are provided for convenience only. Recognition may contain errors — always check the result. The actual coverage is defined by the seller, the manufacturer and applicable law."
+        ],
+        "ru": [
+          "Даты окончания гарантии, сроки возврата и напоминания рассчитываются по данным, которые вы ввели или которые распознало приложение, и носят справочный характер. Распознавание может содержать ошибки — проверяйте результат. Фактические условия гарантии определяют продавец, производитель и применимое законодательство."
+        ]
+      },
+      "faq": [
+        {
+          "q": { "en": "Where are my documents stored?", "ru": "Где хранятся мои документы?" },
+          "a": {
+            "en": "Only on your device. There is no account and no cloud sync, so deleting the app deletes its data. Include the app in your device backup to keep a copy.",
+            "ru": "Только на вашем устройстве. Аккаунта и облачной синхронизации нет, поэтому удаление приложения удаляет и данные. Чтобы сохранить копию, включите приложение в резервную копию устройства."
+          }
+        },
+        {
+          "q": { "en": "Reminders do not arrive", "ru": "Не приходят напоминания" },
+          "a": {
+            "en": "Open Settings → Notifications → Receipt Vault and allow notifications, then turn on Reminders in the app settings. Reminders are scheduled only for items with a warranty or return period.",
+            "ru": "Откройте Настройки → Уведомления → Receipt Vault и разрешите уведомления, затем включите «Напоминания» в настройках приложения. Напоминания создаются только для покупок с гарантией или сроком возврата."
+          }
+        },
+        {
+          "q": { "en": "The receipt was recognised incorrectly", "ru": "Чек распознан неправильно" },
+          "a": {
+            "en": "Shoot in good light, keep the receipt flat and fill the frame. Any field can be corrected by hand before saving or later from the item screen.",
+            "ru": "Снимайте при хорошем освещении, расправьте чек и заполните им кадр. Любое поле можно исправить вручную перед сохранением или позже на экране покупки."
+          }
+        }
+      ]
+    }
+  }
+}
