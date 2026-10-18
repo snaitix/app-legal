@@ -20,7 +20,13 @@
         "analytics": false,
         "ads": false,
         "subscriptions": true,
-        "permissions": ["camera", "photos", "files", "notifications", "biometrics"]
+        "permissions": [
+          "camera",
+          "photos",
+          "files",
+          "notifications",
+          "biometrics"
+        ]
       },
       "privacyNotes": {
         "en": [
@@ -42,21 +48,30 @@
       },
       "faq": [
         {
-          "q": { "en": "Where are my documents stored?", "ru": "Где хранятся мои документы?" },
+          "q": {
+            "en": "Where are my documents stored?",
+            "ru": "Где хранятся мои документы?"
+          },
           "a": {
             "en": "Only on your device. There is no account and no cloud sync, so deleting the app deletes its data. Include the app in your device backup to keep a copy.",
             "ru": "Только на вашем устройстве. Аккаунта и облачной синхронизации нет, поэтому удаление приложения удаляет и данные. Чтобы сохранить копию, включите приложение в резервную копию устройства."
           }
         },
         {
-          "q": { "en": "Reminders do not arrive", "ru": "Не приходят напоминания" },
+          "q": {
+            "en": "Reminders do not arrive",
+            "ru": "Не приходят напоминания"
+          },
           "a": {
             "en": "Open Settings → Notifications → Chipmo and allow notifications, then turn on Reminders in the app settings. Reminders are scheduled only for items with a warranty or return period.",
             "ru": "Откройте Настройки → Уведомления → Chipmo и разрешите уведомления, затем включите «Напоминания» в настройках приложения. Напоминания создаются только для покупок с гарантией или сроком возврата."
           }
         },
         {
-          "q": { "en": "The receipt was recognised incorrectly", "ru": "Чек распознан неправильно" },
+          "q": {
+            "en": "The receipt was recognised incorrectly",
+            "ru": "Чек распознан неправильно"
+          },
           "a": {
             "en": "Shoot in good light, keep the receipt flat and fill the frame. Any field can be corrected by hand before saving or later from the item screen.",
             "ru": "Снимайте при хорошем освещении, расправьте чек и заполните им кадр. Любое поле можно исправить вручную перед сохранением или позже на экране покупки."
@@ -82,8 +97,12 @@
         "account": false,
         "analytics": false,
         "ads": false,
-        "subscriptions": false,
-        "permissions": ["microphone", "camera", "photos"]
+        "subscriptions": true,
+        "permissions": [
+          "microphone",
+          "camera",
+          "photos"
+        ]
       },
       "thirdParties": [
         {
@@ -97,51 +116,63 @@
       "privacyNotes": {
         "en": [
           "When you send a message, the current conversation and any attached images go over an encrypted connection to our server, which forwards them to OpenAI to generate the reply. The server does not store the content of messages or replies.",
-          "Requests carry a random app installation identifier used only for fair-use limits. It is not linked to your name, Apple ID or contacts. Technical logs contain only service data (time, model tier, message and character counts, status) and are kept briefly.",
+          "Requests carry a random app installation identifier used only for fair-use limits. It is not linked to your name, Apple ID or contacts. If you have Lite AI Pro, requests also carry the App Store–signed transaction of your subscription so the server can confirm the Pro plan; it contains no payment details. Technical logs contain only service data (time, plan, model tier, message and character counts, status) and are kept briefly.",
           "Speech is recognised on your device by Apple's speech recognition; the camera is used only during a voice conversation when you turn it on."
         ],
         "ru": [
           "При отправке сообщения текущий диалог и прикреплённые изображения по зашифрованному соединению передаются на наш сервер, который пересылает их в OpenAI для генерации ответа. Сервер не сохраняет содержимое сообщений и ответов.",
-          "Запросы содержат случайный идентификатор установки приложения, который используется только для лимитов честного использования и не связан с вашим именем, Apple ID или контактами. Технические журналы содержат только служебные данные (время, тариф модели, число сообщений и символов, статус) и хранятся недолго.",
+          "Запросы содержат случайный идентификатор установки приложения, который используется только для лимитов честного использования и не связан с вашим именем, Apple ID или контактами. При подписке Lite AI Pro запросы также содержат подписанную App Store транзакцию подписки, чтобы сервер подтвердил тариф Pro; платёжных данных в ней нет. Технические журналы содержат только служебные данные (время, тариф, модель, число сообщений и символов, статус) и хранятся недолго.",
           "Речь распознаётся на устройстве средствами Apple; камера используется только во время голосового разговора, когда вы её включаете."
         ]
       },
       "termsNotes": {
         "en": [
           "Answers are generated by AI models and can be inaccurate or incomplete. They are not medical, legal or financial advice — check important information yourself.",
-          "Usage is limited per device to keep the service available to everyone; the Smart model has a daily limit. Automated access or attempts to bypass limits may lead to blocked access.",
+          "The free plan includes the Fast model with a daily message limit. Lite AI Pro unlocks the Smart model, photo answers, live voice with camera and higher daily limits. Pro limits are generous but not unlimited, to keep the service available to everyone. Automated access or attempts to bypass limits may lead to blocked access.",
           "Do not use the App to create content that violates the OpenAI usage policies; such requests may be refused. You keep the rights to what you send and are responsible for having the right to share it."
         ],
         "ru": [
           "Ответы генерируются моделями ИИ и могут быть неточными или неполными. Они не являются медицинской, юридической или финансовой консультацией — проверяйте важную информацию самостоятельно.",
-          "Чтобы сервис был доступен всем, использование ограничено на устройство; у модели Smart есть дневной лимит. Автоматизированный доступ или обход лимитов могут привести к блокировке.",
+          "Бесплатный тариф включает быструю модель с дневным лимитом сообщений. Lite AI Pro открывает умную модель, ответы по фото, живой голос с камерой и повышенные дневные лимиты. Лимиты Pro щедрые, но не безграничные, чтобы сервис был доступен всем. Автоматизированный доступ или обход лимитов могут привести к блокировке.",
           "Не используйте Приложение для создания контента, нарушающего правила использования OpenAI; такие запросы могут быть отклонены. Права на отправленное остаются за вами, и вы отвечаете за право им делиться."
         ]
       },
       "faq": [
         {
-          "q": { "en": "Do I need an account or an API key?", "ru": "Нужен ли аккаунт или API-ключ?" },
+          "q": {
+            "en": "Do I need an account or an API key?",
+            "ru": "Нужен ли аккаунт или API-ключ?"
+          },
           "a": {
             "en": "No. Open the app and start chatting — replies come through our server.",
             "ru": "Нет. Откройте приложение и пишите — ответы приходят через наш сервер."
           }
         },
         {
-          "q": { "en": "The Smart limit is reached", "ru": "Закончился лимит Smart" },
+          "q": {
+            "en": "Free messages for today are over",
+            "ru": "Закончились бесплатные сообщения"
+          },
           "a": {
-            "en": "Tap “Use Fast” in the message — the question is resent to the Fast model. The Smart limit resets daily.",
-            "ru": "Нажмите «На быструю» в сообщении — вопрос повторится на быстрой модели. Лимит Smart обновляется ежедневно."
+            "en": "The free limit resets daily. With Lite AI Pro you get many times more messages, the Smart model, photos and voice. The weekly plan starts with a 3-day free trial for new subscribers.",
+            "ru": "Бесплатный лимит обновляется ежедневно. С Lite AI Pro сообщений в разы больше, плюс умная модель, фото и голос. Недельный план начинается с 3 бесплатных дней для новых подписчиков."
           }
         },
         {
-          "q": { "en": "Voice mode does not hear me", "ru": "Голосовой режим меня не слышит" },
+          "q": {
+            "en": "Voice mode does not hear me",
+            "ru": "Голосовой режим меня не слышит"
+          },
           "a": {
             "en": "Open Settings → Lite AI and allow Microphone and Speech Recognition, then start voice mode again.",
             "ru": "Откройте Настройки → Lite AI, разрешите «Микрофон» и «Распознавание речи» и снова запустите голосовой режим."
           }
         },
         {
-          "q": { "en": "Where is my chat history stored?", "ru": "Где хранится история чатов?" },
+          "q": {
+            "en": "Where is my chat history stored?",
+            "ru": "Где хранится история чатов?"
+          },
           "a": {
             "en": "Only on your device. Deleting a chat or the app removes it.",
             "ru": "Только на вашем устройстве. Удаление чата или приложения удаляет её."
