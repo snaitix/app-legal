@@ -221,7 +221,7 @@
           "Body detection, skin-tone and area estimation run on your device with Apple Vision. Your designs and history are stored only on your device.",
           "When you generate a design, the selected photo, the outlined area (mask), your text idea and the chosen options go over an encrypted connection to our server, which forwards them to OpenAI to create the image. Neither our server nor the app logs store photos, masks, prompts or results; logs contain only service data (time, mode, style, image size, status, latency).",
           "Requests carry a random app installation identifier used only for usage limits; it is not linked to your name, Apple ID or contacts. A one-way hash of it is passed to OpenAI for abuse prevention. With Inktopus Pro, requests also carry the App Store–signed transaction of your subscription so the server can confirm the plan; it contains no payment details.",
-          "Notifications are used only for the subscription reminder you can turn off in Settings. Saving to Photos happens only when you tap Save."
+          "Notifications are used only for the subscription reminder and an occasional reminder with new design ideas; you can turn them off in Settings or iOS Settings. Saving to Photos happens only when you tap Save."
         ],
         "ru": [
           "Распознавание тела, оттенка кожи и зоны выполняется на устройстве средствами Apple Vision. Ваши эскизы и история хранятся только на устройстве.",
