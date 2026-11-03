@@ -83,7 +83,7 @@
       "name": "Lite AI",
       "accent": "#0077B8",
       "accentDark": "#2CCBFF",
-      "updated": "2026-10-18",
+      "updated": "2026-11-03",
       "tagline": {
         "en": "AI chat and voice assistant",
         "ru": "ИИ-чат и голосовой ассистент"
@@ -115,11 +115,13 @@
       ],
       "privacyNotes": {
         "en": [
+          "Before anything is sent, the app shows a screen explaining what data is shared and with whom, and asks for your consent. Data shared with OpenAI: the text of your messages, the history of the current conversation, photos you attach, and text transcribed from your speech in Voice mode. It is used only to generate replies — not for advertising, profiling or sale. OpenAI processes it under its API data-processing terms, which provide the same or equal protection of your data as described in this policy.",
           "When you send a message, the current conversation and any attached images go over an encrypted connection to our server, which forwards them to OpenAI to generate the reply. The server does not store the content of messages or replies.",
           "Requests carry a random app installation identifier used only for fair-use limits. It is not linked to your name, Apple ID or contacts. If you have Lite AI Pro, requests also carry the App Store–signed transaction of your subscription so the server can confirm the Pro plan; it contains no payment details. Technical logs contain only service data (time, plan, model tier, message and character counts, status) and are kept briefly.",
           "Speech is recognised on your device by Apple's speech recognition; the camera is used only during a voice conversation when you turn it on."
         ],
         "ru": [
+          "Перед первой отправкой приложение показывает экран с описанием того, какие данные и кому передаются, и запрашивает ваше согласие. В OpenAI передаются: текст ваших сообщений, история текущего диалога, прикреплённые фото и текст, распознанный из вашей речи в голосовом режиме. Данные используются только для генерации ответов — не для рекламы, профилирования или продажи. OpenAI обрабатывает их по своим условиям обработки данных API, которые обеспечивают такую же или равную защиту данных, как описано в этой политике.",
           "При отправке сообщения текущий диалог и прикреплённые изображения по зашифрованному соединению передаются на наш сервер, который пересылает их в OpenAI для генерации ответа. Сервер не сохраняет содержимое сообщений и ответов.",
           "Запросы содержат случайный идентификатор установки приложения, который используется только для лимитов честного использования и не связан с вашим именем, Apple ID или контактами. При подписке Lite AI Pro запросы также содержат подписанную App Store транзакцию подписки, чтобы сервер подтвердил тариф Pro; платёжных данных в ней нет. Технические журналы содержат только служебные данные (время, тариф, модель, число сообщений и символов, статус) и хранятся недолго.",
           "Речь распознаётся на устройстве средствами Apple; камера используется только во время голосового разговора, когда вы её включаете."
