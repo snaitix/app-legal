@@ -275,6 +275,125 @@
         }
       ]
     },
+    "plumb": {
+      "name": "Plumb",
+      "accent": "#3F5A00",
+      "accentDark": "#C8F031",
+      "updated": "2026-11-12",
+      "tagline": {
+        "en": "AI estimates and invoices for contractors",
+        "ru": "ИИ-сметы и счета для подрядчиков"
+      },
+      "about": {
+        "en": "Plumb turns job-site photos and a voice description of the work into an itemised estimate with labor and materials. You edit it, send a PDF to the client and issue invoices from the same job. No account needed.",
+        "ru": "Plumb превращает фото объекта и голосовое описание работ в подробную смету с работами и материалами. Вы правите её, отправляете клиенту PDF и выставляете счета из той же сметы. Аккаунт не нужен."
+      },
+      "data": {
+        "storage": "device",
+        "account": false,
+        "analytics": true,
+        "ads": false,
+        "subscriptions": true,
+        "permissions": [
+          "camera",
+          "photos",
+          "microphone",
+          "notifications"
+        ]
+      },
+      "thirdParties": [
+        {
+          "name": "Anthropic (Claude)",
+          "purpose": {
+            "en": "drafts the estimate from the photos and the job description under its commercial API terms, which do not use API data to train models",
+            "ru": "составляет смету по фото и описанию работ по своим коммерческим условиям API, согласно которым данные API не используются для обучения моделей"
+          }
+        },
+        {
+          "name": "Google Firebase",
+          "purpose": {
+            "en": "Analytics and Crashlytics receive app events and crash reports with counts, plan names and error codes only — never names, addresses, phone numbers, photos, descriptions or prices; Analytics runs without the advertising identifier",
+            "ru": "Analytics и Crashlytics получают события приложения и отчёты о сбоях только с количествами, названиями тарифов и кодами ошибок — без имён, адресов, телефонов, фото, описаний и цен; Analytics работает без рекламного идентификатора"
+          }
+        }
+      ],
+      "privacyNotes": {
+        "en": [
+          "Jobs, estimates, invoices, client details, your business profile and price book are stored only on your device. They leave it only when you share a PDF yourself.",
+          "Voice dictation is converted to text by Apple speech recognition, on the device whenever it supports it. The recording itself is not saved.",
+          "Before your first estimate the app asks your consent. When you create or revise an estimate, the job photos, the text of your description, the trade, region, currency, units and your price book (or, for a revision, the current estimate and your instruction) go over an encrypted connection to our server, which forwards them to Anthropic. Client names, addresses and phone numbers are never sent.",
+          "Neither our server nor its logs store photos, descriptions, price books or estimates; logs contain only service data (time, status, latency, counts, model, token usage).",
+          "Requests carry a random app installation identifier used only for usage limits; it is not linked to your name, Apple ID or contacts. With Plumb Pro, requests also carry the App Store–signed transaction of your subscription so the server can confirm the plan; it contains no payment details.",
+          "Clients are picked with the system contact picker, so the app sees only the one contact you choose and never gets access to your address book. Notifications are used only for follow-up and invoice due reminders; you can turn them off in iOS Settings.",
+          "Usage statistics and crash reports are not linked to you, are not used for advertising or tracking, and the App does not ask for tracking permission."
+        ],
+        "ru": [
+          "Объекты, сметы, счета, данные клиентов, профиль компании и прайс хранятся только на устройстве. Они покидают его, только когда вы сами отправляете PDF.",
+          "Голосовая диктовка преобразуется в текст распознаванием речи Apple — на устройстве, если оно это поддерживает. Сама запись не сохраняется.",
+          "Перед первой сметой приложение запрашивает ваше согласие. При создании или правке сметы фото объекта, текст описания, вид работ, регион, валюта, единицы и ваш прайс (а при правке — текущая смета и ваша инструкция) по зашифрованному соединению передаются на наш сервер, который пересылает их в Anthropic. Имена, адреса и телефоны клиентов не передаются.",
+          "Ни сервер, ни его журналы не сохраняют фото, описания, прайсы и сметы; в журналах только служебные данные (время, статус, задержка, количество, модель, расход токенов).",
+          "Запросы содержат случайный идентификатор установки, который используется только для лимитов и не связан с вашим именем, Apple ID или контактами. При подписке Plumb Pro запросы также содержат подписанную App Store транзакцию подписки, чтобы сервер подтвердил тариф; платёжных данных в ней нет.",
+          "Клиент выбирается системным окном контактов: приложение видит только выбранный контакт и не получает доступа к адресной книге. Уведомления используются только для напоминаний о follow-up и сроках оплаты счетов; их можно выключить в Настройках iOS.",
+          "Статистика использования и отчёты о сбоях не связаны с вами, не используются для рекламы и отслеживания, а разрешение на отслеживание Приложение не запрашивает."
+        ]
+      },
+      "termsNotes": {
+        "en": [
+          "Estimates are drafted by AI from photos and your description. Quantities and prices are a starting point: check every line, measurements and local rates before sending a document to a client. You are responsible for the estimates and invoices you issue.",
+          "Plumb does not provide tax, legal or accounting advice. Tax rates, invoice requirements and document numbering are set by you.",
+          "The free plan includes 2 AI estimates per device. An AI revision counts as one estimate. Plumb Pro unlocks invoices, your logo on documents and up to 60 AI estimates per day. Automated access or attempts to bypass limits may lead to blocked access.",
+          "Upload only photos you have the right to use. Requests that violate the Anthropic usage policies are refused."
+        ],
+        "ru": [
+          "Сметы составляет ИИ по фото и вашему описанию. Объёмы и цены — отправная точка: проверьте каждую строку, замеры и местные расценки, прежде чем отправлять документ клиенту. За выставленные сметы и счета отвечаете вы.",
+          "Plumb не даёт налоговых, юридических или бухгалтерских консультаций. Ставки налогов, требования к счетам и нумерацию документов задаёте вы.",
+          "Бесплатный тариф — 2 ИИ-сметы на устройство. ИИ-правка считается одной сметой. Plumb Pro открывает счета, логотип на документах и до 60 ИИ-смет в день. Автоматизированный доступ или обход лимитов могут привести к блокировке.",
+          "Загружайте только фото, на использование которых у вас есть право. Запросы, нарушающие правила использования Anthropic, отклоняются."
+        ]
+      },
+      "faq": [
+        {
+          "q": {
+            "en": "Free estimates are over",
+            "ru": "Закончились бесплатные сметы"
+          },
+          "a": {
+            "en": "The free plan gives 2 AI estimates per device. You can still edit and send existing estimates. Plumb Pro gives up to 60 AI estimates a day plus invoices.",
+            "ru": "Бесплатно доступно 2 ИИ-сметы на устройство. Готовые сметы можно и дальше править и отправлять. Plumb Pro даёт до 60 ИИ-смет в день и счета."
+          }
+        },
+        {
+          "q": {
+            "en": "The estimate takes a while",
+            "ru": "Смета составляется долго"
+          },
+          "a": {
+            "en": "A detailed estimate usually takes 30–90 seconds. Keep the app open; if it fails, nothing is charged against your limit.",
+            "ru": "Подробная смета обычно занимает 30–90 секунд. Не закрывайте приложение; при ошибке лимит не расходуется."
+          }
+        },
+        {
+          "q": {
+            "en": "The camera or dictation does not work",
+            "ru": "Не работает камера или диктовка"
+          },
+          "a": {
+            "en": "Open Settings → Plumb and allow Camera, Microphone and Speech Recognition, then try again.",
+            "ru": "Откройте Настройки → Plumb, разрешите «Камеру», «Микрофон» и «Распознавание речи» и попробуйте снова."
+          }
+        },
+        {
+          "q": {
+            "en": "Are my client details sent anywhere?",
+            "ru": "Передаются ли куда-то данные клиентов?"
+          },
+          "a": {
+            "en": "No. Client names, addresses and phone numbers stay on your device. Only photos and the job description are sent to draft the estimate.",
+            "ru": "Нет. Имена, адреса и телефоны клиентов остаются на устройстве. Для сметы отправляются только фото и описание работ."
+          }
+        }
+      ]
+    },
     "ragdoll": {
       "name": "Ragdoll",
       "accent": "#2563EB",
