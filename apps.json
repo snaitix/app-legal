@@ -367,6 +367,114 @@
           }
         }
       ]
+    },
+    "setter": {
+      "name": "Setter",
+      "accent": "#6A43E6",
+      "accentDark": "#A78BFF",
+      "updated": "2026-11-12",
+      "tagline": {
+        "en": "Listing photos, virtual staging and reels for real-estate agents",
+        "ru": "Фото объектов, виртуальная расстановка и ролики для риелторов"
+      },
+      "about": {
+        "en": "Setter turns the photos of a property into a listing: it sorts them by room, straightens and brightens them, removes objects, stages empty rooms, builds a vertical reel and writes the description with translations. No account needed.",
+        "ru": "Setter превращает фото объекта в готовое объявление: раскладывает снимки по комнатам, выравнивает и осветляет их, удаляет лишнее, обставляет пустые комнаты, собирает вертикальный ролик и пишет описание с переводами. Аккаунт не нужен."
+      },
+      "data": {
+        "storage": "device",
+        "account": false,
+        "analytics": false,
+        "ads": false,
+        "subscriptions": true,
+        "permissions": [
+          "photos",
+          "notifications"
+        ]
+      },
+      "thirdParties": [
+        {
+          "name": "OpenAI",
+          "purpose": {
+            "en": "stages and declutters room photos and writes listing descriptions and translations under its API data-usage policy, which does not use API data to train models by default",
+            "ru": "обставляет и расчищает фото комнат, пишет описания объектов и переводы по своей политике использования данных API, согласно которой они по умолчанию не используются для обучения моделей"
+          }
+        }
+      ],
+      "privacyNotes": {
+        "en": [
+          "Listings, photos, property details and your agent profile are stored only on your device. Exported photos and reels leave it only when you save or share them yourself.",
+          "Room detection, straightening, enhancement, object removal and reel rendering run on your device with Apple frameworks (Vision, Core Image and AVFoundation).",
+          "Before the first AI edit the app asks your consent. For virtual staging or decluttering, one resized copy of the chosen photo, the room type and the style go over an encrypted connection to our server, which forwards them to OpenAI. For a description, the property facts (type, deal, price, rooms, area, city, neighbourhood, features and your notes), the tone, the languages and up to 4 small copies of the photos (no larger than 640 px) are sent the same way. The street address, your name and your phone number are never sent.",
+          "Neither our server nor its logs store photos, property details or results; logs contain only service data (time, status, plan, the chosen options, counts, sizes and latency).",
+          "Requests carry a random app installation identifier, kept in the iOS Keychain and used only for usage limits; it is not linked to your name, Apple ID or contacts. OpenAI receives only a one-way hash of it, for abuse prevention. With Setter Pro, requests also carry the App Store–signed transaction of your subscription so the server can confirm the plan; it contains no payment details.",
+          "You pick photos with the system photo picker, so the app sees only the photos you choose. Access to your library is add-only and is requested the first time you save a photo or a reel. Listings appear in Spotlight search on your device without the street address. Notifications are used only for the optional reminder before a free trial ends, which you turn on yourself."
+        ],
+        "ru": [
+          "Объекты, фото, параметры и профиль агента хранятся только на устройстве. Готовые фото и ролики покидают его, только когда вы сами сохраняете их или делитесь ими.",
+          "Определение комнат, выравнивание, улучшение, удаление объектов и сборка роликов выполняются на устройстве средствами Apple (Vision, Core Image и AVFoundation).",
+          "Перед первой ИИ-обработкой приложение запрашивает ваше согласие. Для виртуальной расстановки или расчистки уменьшенная копия выбранного фото, тип комнаты и стиль по зашифрованному соединению передаются на наш сервер, который пересылает их в OpenAI. Для описания так же передаются параметры объекта (тип, сделка, цена, комнаты, площадь, город, район, особенности и ваши заметки), тон, языки и до 4 уменьшенных копий фото (не больше 640 px). Адрес, ваше имя и телефон не передаются.",
+          "Ни сервер, ни его журналы не сохраняют фото, параметры объектов и результаты; в журналах только служебные данные (время, статус, тариф, выбранные варианты, количество, размеры и задержка).",
+          "Запросы содержат случайный идентификатор установки, который хранится в связке ключей iOS, используется только для лимитов и не связан с вашим именем, Apple ID или контактами. OpenAI получает только его необратимый хеш — для защиты от злоупотреблений. При подписке Setter Pro запросы также содержат подписанную App Store транзакцию подписки, чтобы сервер подтвердил тариф; платёжных данных в ней нет.",
+          "Фото выбираются системным окном выбора, поэтому приложение видит только выбранные вами снимки. Доступ к медиатеке — только на добавление, он запрашивается при первом сохранении фото или ролика. Объекты видны в поиске Spotlight на устройстве без адреса. Уведомления нужны только для напоминания перед окончанием бесплатного периода, которое вы включаете сами."
+        ]
+      },
+      "termsNotes": {
+        "en": [
+          "The free plan includes 2 listings on the device, 2 stagings and 3 descriptions per rolling 7 days, enhancement, object removal and reels with a small Setter mark. Setter Pro adds unlimited listings, up to 40 stagings and 60 descriptions a day, translations into up to 4 languages and reels without the mark.",
+          "Virtually staged and decluttered photos are generated by AI and do not show the actual condition or furnishing of the property. Setter marks them «Virtually staged» or «Virtually edited» on every export and in reels. Keep that mark and follow the disclosure rules of your market, listing portal and brokerage when you publish them.",
+          "Descriptions and translations are written from the facts you enter and may contain errors. Check them before publishing. You are responsible for the accuracy of your listings and their compliance with advertising and fair-housing rules.",
+          "Use only photos you have the right to use."
+        ],
+        "ru": [
+          "Бесплатно доступны 2 объекта на устройстве, 2 расстановки и 3 описания за скользящие 7 дней, улучшение, удаление объектов и ролики с небольшой пометкой Setter. Setter Pro добавляет безлимит объектов, до 40 расстановок и 60 описаний в день, переводы на 4 языка и ролики без пометки.",
+          "Фото с виртуальной расстановкой и расчисткой создаются ИИ и не показывают фактическое состояние и обстановку объекта. Setter помечает их «Виртуальная расстановка» или «Виртуальная обработка» на каждом экспорте и в роликах. Сохраняйте пометку и соблюдайте правила раскрытия вашего рынка, площадки объявлений и агентства при публикации.",
+          "Описания и переводы составляются по введённым вами данным и могут содержать ошибки. Проверяйте их перед публикацией. За точность объявлений и их соответствие правилам рекламы и недискриминации отвечаете вы.",
+          "Используйте только фото, на которые у вас есть права."
+        ]
+      },
+      "faq": [
+        {
+          "q": {
+            "en": "Where are my listings stored?",
+            "ru": "Где хранятся мои объекты?"
+          },
+          "a": {
+            "en": "Only on your device. There is no account and no cloud sync, so deleting the app deletes its listings. Include the app in your device backup to keep a copy.",
+            "ru": "Только на устройстве. Аккаунта и облачной синхронизации нет, поэтому удаление приложения удаляет и объекты. Чтобы сохранить копию, включите приложение в резервную копию устройства."
+          }
+        },
+        {
+          "q": {
+            "en": "Why are some photos marked?",
+            "ru": "Почему на некоторых фото есть пометка?"
+          },
+          "a": {
+            "en": "Staged and decluttered versions are created by AI. Listing portals and regulators in many markets require such photos to be disclosed, so Setter marks every export of them and the slide in the reel. The original photo stays in the listing.",
+            "ru": "Версии с расстановкой и расчисткой создаёт ИИ. Площадки объявлений и регуляторы во многих странах требуют раскрывать такие фото, поэтому Setter помечает каждый их экспорт и слайд в ролике. Исходное фото остаётся в объекте."
+          }
+        },
+        {
+          "q": {
+            "en": "Staging or a description does not arrive",
+            "ru": "Не приходит расстановка или описание"
+          },
+          "a": {
+            "en": "Both need an internet connection. Check the connection and try again. The free plan has weekly limits and Pro has daily ones; the app tells you when a limit is reached. Your listing and photos stay on the device whatever happens.",
+            "ru": "Для них нужен интернет. Проверьте соединение и повторите. В бесплатной версии действуют недельные лимиты, в Pro — дневные; приложение сообщает, когда лимит исчерпан. Объект и фото в любом случае остаются на устройстве."
+          }
+        },
+        {
+          "q": {
+            "en": "How do I restore or cancel Pro?",
+            "ru": "Как восстановить или отменить Pro?"
+          },
+          "a": {
+            "en": "To restore, open Settings in Setter, tap Setter Pro and then Restore. To cancel, open iOS Settings → your name → Subscriptions → Setter at least 24 hours before the current period ends.",
+            "ru": "Чтобы восстановить, откройте Настройки в Setter, нажмите Setter Pro, затем «Восстановить». Чтобы отменить, откройте Настройки iOS → ваше имя → Подписки → Setter не позднее чем за 24 часа до конца текущего периода."
+          }
+        }
+      ]
     }
   }
 }
