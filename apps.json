@@ -719,6 +719,112 @@
           }
         }
       ]
+    },
+    "basenji": {
+      "name": "Basenji",
+      "accent": "#5A4FF3",
+      "accentDark": "#7C72FF",
+      "updated": "2026-11-14",
+      "tagline": {
+        "en": "Xcode and developer cache cleaner for Mac",
+        "ru": "Очистка Xcode и кешей разработчика на Mac"
+      },
+      "about": {
+        "en": "Basenji measures what Xcode, simulators, package managers and other developer tools leave on your Mac, and explains for every item what happens after removal and how it comes back. Only items that rebuild by themselves are preselected. Files go to the Trash and can be put back from History. Basenji works on your Mac only and has no account.",
+        "ru": "Basenji измеряет, что оставляют на Mac Xcode, симуляторы, менеджеры пакетов и другие инструменты разработчика, и для каждого элемента объясняет, что изменится после удаления и как его вернуть. Заранее отмечается только то, что пересоздаётся само. Файлы уходят в Корзину, и их можно вернуть из истории. Basenji работает только на вашем Mac, аккаунт не нужен."
+      },
+      "data": {
+        "storage": "device",
+        "account": false,
+        "analytics": false,
+        "ads": false,
+        "subscriptions": true,
+        "permissions": []
+      },
+      "privacyNotes": {
+        "en": [
+          "Basenji runs in the macOS App Sandbox. It reads only the home folder you choose in the system open panel, and you can revoke that access in Settings at any time. Full Disk Access is optional and only lets Basenji measure a few folders macOS protects.",
+          "Basenji reads file names, sizes and dates to measure caches. It does not open the contents of your documents, and nothing it reads leaves your Mac.",
+          "Scan results, cleanup history, your preferences and the free cleaning counter are stored on your Mac in the app's sandbox container. They are never uploaded.",
+          "Basenji has no analytics, advertising or tracking SDKs. Diagnostic messages go only to the macOS system log on your Mac.",
+          "The only network connection is to the App Store to load subscription plans and check your purchases. Apple processes payment details and we never receive them."
+        ],
+        "ru": [
+          "Basenji работает в песочнице macOS App Sandbox. Приложение читает только ту папку пользователя, которую вы выбрали в системном окне, и этот доступ можно отозвать в настройках. Полный доступ к диску необязателен и нужен лишь для того, чтобы измерить несколько папок, защищённых macOS.",
+          "Basenji читает имена, размеры и даты файлов, чтобы измерить кеши. Содержимое ваших документов не открывается, и ничего из прочитанного не покидает Mac.",
+          "Результаты сканирования, история очисток, настройки и счётчик бесплатной очистки хранятся на Mac в контейнере приложения и никуда не загружаются.",
+          "В Basenji нет аналитики, рекламы и SDK для отслеживания. Диагностические сообщения пишутся только в системный журнал macOS на вашем Mac.",
+          "Единственное сетевое соединение идёт к App Store, чтобы загрузить тарифы и проверить покупки. Платёжные данные обрабатывает Apple, мы их не получаем."
+        ]
+      },
+      "termsNotes": {
+        "en": [
+          "Basenji explains each item and its risk level, but you decide what to remove. Items marked Check first or Better kept are never selected for you. Read the explanation before removing archives, simulators, backups or large files.",
+          "Cleaning moves files to the Trash. You can put them back from History until the Trash is emptied. Emptying the Trash from Basenji deletes everything in it for good, including files from other apps, and asks for confirmation first.",
+          "Some items, such as Xcode versions, simulator runtimes and Docker data, are removed with their own tools. Basenji shows the command and does not delete them itself.",
+          "The free plan includes scanning, every explanation, History and 5 GB of cleaning in total. Basenji Pro adds unlimited cleaning, the large file finder and the menu bar monitor.",
+          "Quit Xcode, simulators and other tools before cleaning their folders. Open apps can write to these folders while files are being moved."
+        ],
+        "ru": [
+          "Basenji объясняет каждый элемент и уровень риска, но решение об удалении принимаете вы. Элементы с пометками «Проверьте» и «Лучше оставить» никогда не отмечаются автоматически. Прочитайте пояснение, прежде чем удалять архивы, симуляторы, резервные копии или большие файлы.",
+          "Очистка переносит файлы в Корзину. Пока Корзина не очищена, их можно вернуть из истории. Очистка Корзины из Basenji удаляет навсегда всё её содержимое, включая файлы других приложений, и выполняется только после подтверждения.",
+          "Некоторые элементы, например версии Xcode, среды выполнения симуляторов и данные Docker, удаляются их собственными инструментами. Basenji показывает команду и сам их не удаляет.",
+          "Бесплатный тариф включает сканирование, все пояснения, историю и 5 ГБ очистки суммарно. Basenji Pro добавляет очистку без лимита, поиск больших файлов и монитор в строке меню.",
+          "Перед очисткой закройте Xcode, симуляторы и другие инструменты. Открытые приложения могут писать в эти папки, пока файлы переносятся."
+        ]
+      },
+      "faq": [
+        {
+          "q": {
+            "en": "Why does Basenji ask for my home folder",
+            "ru": "Зачем Basenji папка пользователя"
+          },
+          "a": {
+            "en": "Apps from the Mac App Store run in a sandbox and can read only folders you open for them. Developer caches live in ~/Library and hidden folders like ~/.npm, so Basenji needs the home folder itself. You can revoke access in Settings.",
+            "ru": "Приложения из Mac App Store работают в песочнице и видят только папки, которые вы им открыли. Кеши разработчика лежат в ~/Library и скрытых папках вроде ~/.npm, поэтому Basenji нужна сама папка пользователя. Доступ можно отозвать в настройках."
+          }
+        },
+        {
+          "q": {
+            "en": "Free space did not change after cleaning",
+            "ru": "После очистки места не прибавилось"
+          },
+          "a": {
+            "en": "Files are moved to the Trash first, so the space frees up when you empty it. You can do that in Finder or from the Overview screen in Basenji.",
+            "ru": "Сначала файлы переносятся в Корзину, поэтому место освобождается после её очистки. Это можно сделать в Finder или на экране «Обзор» в Basenji."
+          }
+        },
+        {
+          "q": {
+            "en": "How do I get a file back",
+            "ru": "Как вернуть файл"
+          },
+          "a": {
+            "en": "Open History, expand the cleanup and click Put back next to the file. This works while the file is still in the Trash.",
+            "ru": "Откройте историю, разверните очистку и нажмите «Вернуть» рядом с файлом. Это работает, пока файл лежит в Корзине."
+          }
+        },
+        {
+          "q": {
+            "en": "Will my Xcode projects break",
+            "ru": "Не сломаются ли проекты Xcode"
+          },
+          "a": {
+            "en": "Derived data, module caches and previews rebuild automatically, and the first build afterwards takes longer. Archives are needed to read crash reports of released builds, so Basenji never selects them for you.",
+            "ru": "Derived data, кеши модулей и превью пересоздаются автоматически, первая сборка после очистки идёт дольше. Архивы нужны, чтобы читать отчёты о сбоях выпущенных сборок, поэтому Basenji никогда не отмечает их автоматически."
+          }
+        },
+        {
+          "q": {
+            "en": "The free limit is used up",
+            "ru": "Бесплатный лимит закончился"
+          },
+          "a": {
+            "en": "The free plan cleans 5 GB in total. Scanning, explanations and History keep working. Basenji Pro removes the limit. If you already subscribed, use Restore on the Pro screen.",
+            "ru": "Бесплатно можно очистить 5 ГБ суммарно. Сканирование, пояснения и история продолжают работать. Basenji Pro снимает лимит. Если подписка уже оформлена, нажмите «Восстановить» на экране Pro."
+          }
+        }
+      ]
     }
   }
 }
