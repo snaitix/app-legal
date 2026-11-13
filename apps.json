@@ -594,6 +594,131 @@
           }
         }
       ]
+    },
+    "videoclips-ai": {
+      "name": "VideoClips AI",
+      "accent": "#C9410C",
+      "accentDark": "#FF763D",
+      "updated": "2026-11-13",
+      "tagline": {
+        "en": "Long videos into vertical clips with captions",
+        "ru": "Длинные видео в вертикальные клипы с субтитрами"
+      },
+      "about": {
+        "en": "VideoClips AI finds the best moments in a long video and turns them into vertical 9:16 clips with word-by-word captions, a hook and a ready post text for TikTok, Reels and Shorts. Speech recognition and rendering happen on your iPhone. No account needed.",
+        "ru": "VideoClips AI находит лучшие моменты в длинном видео и делает из них вертикальные клипы 9:16 с пословными субтитрами, хуком и готовым текстом поста для TikTok, Reels и Shorts. Распознавание речи и рендер выполняются на iPhone. Аккаунт не нужен."
+      },
+      "data": {
+        "storage": "device",
+        "account": false,
+        "analytics": true,
+        "ads": false,
+        "subscriptions": true,
+        "permissions": [
+          "photos",
+          "files",
+          "notifications"
+        ]
+      },
+      "thirdParties": [
+        {
+          "name": "OpenAI",
+          "purpose": {
+            "en": "receives the transcript text through our server to pick the best moments and write hooks, under its API terms, which do not use API data to train models by default",
+            "ru": "получает текст расшифровки через наш сервер, чтобы выбрать лучшие моменты и написать хуки, по условиям своего API, согласно которым данные API по умолчанию не используются для обучения моделей"
+          }
+        },
+        {
+          "name": "Anthropic (Claude)",
+          "purpose": {
+            "en": "backup AI provider: receives the same transcript text only when our server does not respond, under its commercial API terms, which do not use API data to train models",
+            "ru": "резервный AI-провайдер: получает тот же текст расшифровки, только когда наш сервер не отвечает, по своим коммерческим условиям API, согласно которым данные API не используются для обучения моделей"
+          }
+        },
+        {
+          "name": "Google Firebase",
+          "purpose": {
+            "en": "Analytics receives app events with feature and plan names, counts, duration ranges, the transcription language and error codes only — never video, audio, transcript text or file names; Remote Config delivers app settings; Analytics runs without the advertising identifier",
+            "ru": "Analytics получает события приложения только с названиями функций и тарифов, количествами, диапазонами длительности, языком расшифровки и кодами ошибок — без видео, звука, текста расшифровки и имён файлов; Remote Config передаёт настройки приложения; Analytics работает без рекламного идентификатора"
+          }
+        }
+      ],
+      "privacyNotes": {
+        "en": [
+          "Your videos, their audio, frames and the clips you export never leave your iPhone. Projects are kept in the app's storage until you delete them and are excluded from iCloud backup.",
+          "Speech in your video is turned into text by Apple speech recognition on the device only; no audio is sent anywhere.",
+          "To find the best moments, the app sends the transcript text with timestamps, its language and the video type you chose over an encrypted connection to our server, which forwards it to OpenAI. Rewriting a hook sends the text of one clip. If our server does not respond, the same text goes directly to Anthropic. The text is used only to answer your request; it is not sold or used for advertising.",
+          "Requests to AI carry no name, Apple ID, contacts or device identifiers.",
+          "Clips are saved to Photos with add-only access, so the app cannot read your library. Videos are imported only through the system photo or file picker: the app sees only the file you choose. Notifications are used only to tell you that processing has finished; you can turn them off in iOS Settings.",
+          "The free-minutes counter is stored in the device Keychain. Subscriptions are handled by the App Store; Apple processes payment details and we never receive them.",
+          "Usage statistics are not linked to you, are not used for advertising or tracking, and the App does not ask for tracking permission."
+        ],
+        "ru": [
+          "Ваши видео, их звук, кадры и экспортированные клипы не покидают iPhone. Проекты хранятся в памяти приложения, пока вы их не удалите, и не попадают в резервную копию iCloud.",
+          "Речь в видео преобразуется в текст распознаванием речи Apple только на устройстве; звук никуда не отправляется.",
+          "Чтобы найти лучшие моменты, приложение по зашифрованному соединению отправляет на наш сервер текст расшифровки с таймкодами, его язык и выбранный тип видео; сервер пересылает их в OpenAI. Для переписывания хука отправляется текст одного клипа. Если наш сервер не отвечает, тот же текст уходит напрямую в Anthropic. Текст используется только для ответа на ваш запрос, не продаётся и не используется для рекламы.",
+          "Запросы к AI не содержат имени, Apple ID, контактов и идентификаторов устройства.",
+          "Клипы сохраняются в Фото с доступом только на добавление, поэтому приложение не может читать медиатеку. Видео импортируется только через системное окно выбора фото или файлов: приложение видит только выбранный файл. Уведомления используются только для сообщения о том, что обработка закончена; их можно выключить в Настройках iOS.",
+          "Счётчик бесплатных минут хранится в Связке ключей на устройстве. Подписки оформляются через App Store; платёжные данные обрабатывает Apple, мы их не получаем.",
+          "Статистика использования не связана с вами, не используется для рекламы и отслеживания, а разрешение на отслеживание Приложение не запрашивает."
+        ]
+      },
+      "termsNotes": {
+        "en": [
+          "Moments, hooks and post texts are suggested by AI from the transcript. Review every clip, caption and text before you publish it. You are responsible for what you post.",
+          "Upload only videos you have the right to use and edit. Do not use the App to infringe copyright or other people's rights.",
+          "The free plan includes 60 minutes of video processing and 3 exports a week, sources up to 60 minutes and clips with a watermark. VideoClips Pro gives 600 minutes a week, unlimited exports without the watermark, all caption styles, sources up to 180 minutes and batch export. Re-analysing or re-exporting the same video does not use minutes again. Automated access or attempts to bypass limits may lead to blocked access.",
+          "Transcription accuracy depends on audio quality, language and the speech recognition available on your device."
+        ],
+        "ru": [
+          "Моменты, хуки и тексты постов предлагает AI по расшифровке. Проверяйте каждый клип, субтитры и текст перед публикацией. За опубликованное отвечаете вы.",
+          "Загружайте только видео, которые вы вправе использовать и редактировать. Не используйте Приложение для нарушения авторских и иных прав.",
+          "Бесплатный тариф — 60 минут обработки видео и 3 экспорта в неделю, исходники до 60 минут, клипы с водяным знаком. VideoClips Pro даёт 600 минут в неделю, безлимитный экспорт без водяного знака, все стили субтитров, исходники до 180 минут и пакетный экспорт. Повторный анализ и повторный экспорт того же видео минуты не расходуют. Автоматизированный доступ или обход лимитов могут привести к блокировке.",
+          "Точность расшифровки зависит от качества звука, языка и распознавания речи, доступного на устройстве."
+        ]
+      },
+      "faq": [
+        {
+          "q": {
+            "en": "Free minutes are over",
+            "ru": "Закончились бесплатные минуты"
+          },
+          "a": {
+            "en": "The free plan gives 60 minutes of processing and 3 exports a week; the counter resets every week. Clips you already made stay in the library. VideoClips Pro gives 600 minutes a week and unlimited exports.",
+            "ru": "Бесплатно доступно 60 минут обработки и 3 экспорта в неделю; счётчик обновляется каждую неделю. Готовые клипы остаются в библиотеке. VideoClips Pro даёт 600 минут в неделю и безлимитный экспорт."
+          }
+        },
+        {
+          "q": {
+            "en": "Processing takes a while",
+            "ru": "Обработка идёт долго"
+          },
+          "a": {
+            "en": "Transcription runs on your iPhone, so a long video takes a few minutes. You can leave the app: processing continues in the background and resumes from the last step after a restart.",
+            "ru": "Расшифровка выполняется на iPhone, поэтому длинное видео обрабатывается несколько минут. Приложение можно свернуть: обработка продолжится в фоне и после перезапуска возобновится с последнего этапа."
+          }
+        },
+        {
+          "q": {
+            "en": "The video is not transcribed",
+            "ru": "Видео не расшифровывается"
+          },
+          "a": {
+            "en": "Open Settings → VideoClips AI and allow Speech Recognition. Make sure the video has clear speech in a language your iPhone supports for on-device recognition.",
+            "ru": "Откройте Настройки → VideoClips AI и разрешите «Распознавание речи». Убедитесь, что в видео есть разборчивая речь на языке, который iPhone распознаёт на устройстве."
+          }
+        },
+        {
+          "q": {
+            "en": "Is my video uploaded anywhere?",
+            "ru": "Загружается ли куда-то моё видео?"
+          },
+          "a": {
+            "en": "No. Video and audio stay on your iPhone. Only the transcript text is sent to AI to pick the moments.",
+            "ru": "Нет. Видео и звук остаются на iPhone. Для выбора моментов на AI отправляется только текст расшифровки."
+          }
+        }
+      ]
     }
   }
 }
