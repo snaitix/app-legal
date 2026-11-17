@@ -599,7 +599,7 @@
       "name": "VideoClips AI",
       "accent": "#C9410C",
       "accentDark": "#FF763D",
-      "updated": "2026-11-13",
+      "updated": "2026-11-17",
       "tagline": {
         "en": "Long videos into vertical clips with captions",
         "ru": "Длинные видео в вертикальные клипы с субтитрами"
@@ -629,13 +629,6 @@
           }
         },
         {
-          "name": "Anthropic (Claude)",
-          "purpose": {
-            "en": "backup AI provider: receives the same transcript text only when our server does not respond, under its commercial API terms, which do not use API data to train models",
-            "ru": "резервный AI-провайдер: получает тот же текст расшифровки, только когда наш сервер не отвечает, по своим коммерческим условиям API, согласно которым данные API не используются для обучения моделей"
-          }
-        },
-        {
           "name": "Google Firebase",
           "purpose": {
             "en": "Analytics receives app events with feature and plan names, counts, duration ranges, the transcription language and error codes only — never video, audio, transcript text or file names; Remote Config delivers app settings; Analytics runs without the advertising identifier",
@@ -647,7 +640,7 @@
         "en": [
           "Your videos, their audio, frames and the clips you export never leave your iPhone. Projects are kept in the app's storage until you delete them and are excluded from iCloud backup.",
           "Speech in your video is turned into text by Apple speech recognition on the device only; no audio is sent anywhere.",
-          "To find the best moments, the app sends the transcript text with timestamps, its language and the video type you chose over an encrypted connection to our server, which forwards it to OpenAI. Rewriting a hook sends the text of one clip. If our server does not respond, the same text goes directly to Anthropic. The text is used only to answer your request; it is not sold or used for advertising.",
+          "To find the best moments, the app sends the transcript text with timestamps, its language and the video type you chose over an encrypted connection to our server, which forwards it to OpenAI. Rewriting a hook sends the text of one clip. The text is used only to answer your request; it is not sold or used for advertising.",
           "Requests to AI carry no name, Apple ID, contacts or device identifiers.",
           "Clips are saved to Photos with add-only access, so the app cannot read your library. Videos are imported only through the system photo or file picker: the app sees only the file you choose. Notifications are used only to tell you that processing has finished; you can turn them off in iOS Settings.",
           "The free-minutes counter is stored in the device Keychain. Subscriptions are handled by the App Store; Apple processes payment details and we never receive them.",
@@ -656,7 +649,7 @@
         "ru": [
           "Ваши видео, их звук, кадры и экспортированные клипы не покидают iPhone. Проекты хранятся в памяти приложения, пока вы их не удалите, и не попадают в резервную копию iCloud.",
           "Речь в видео преобразуется в текст распознаванием речи Apple только на устройстве; звук никуда не отправляется.",
-          "Чтобы найти лучшие моменты, приложение по зашифрованному соединению отправляет на наш сервер текст расшифровки с таймкодами, его язык и выбранный тип видео; сервер пересылает их в OpenAI. Для переписывания хука отправляется текст одного клипа. Если наш сервер не отвечает, тот же текст уходит напрямую в Anthropic. Текст используется только для ответа на ваш запрос, не продаётся и не используется для рекламы.",
+          "Чтобы найти лучшие моменты, приложение по зашифрованному соединению отправляет на наш сервер текст расшифровки с таймкодами, его язык и выбранный тип видео; сервер пересылает их в OpenAI. Для переписывания хука отправляется текст одного клипа. Текст используется только для ответа на ваш запрос, не продаётся и не используется для рекламы.",
           "Запросы к AI не содержат имени, Apple ID, контактов и идентификаторов устройства.",
           "Клипы сохраняются в Фото с доступом только на добавление, поэтому приложение не может читать медиатеку. Видео импортируется только через системное окно выбора фото или файлов: приложение видит только выбранный файл. Уведомления используются только для сообщения о том, что обработка закончена; их можно выключить в Настройках iOS.",
           "Счётчик бесплатных минут хранится в Связке ключей на устройстве. Подписки оформляются через App Store; платёжные данные обрабатывает Apple, мы их не получаем.",
